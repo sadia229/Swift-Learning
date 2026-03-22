@@ -1,0 +1,36 @@
+
+// / TODO: User Input
+print("enter a number")
+
+var userGivenNumber: Int?
+if let input = readLine(), let number = Int(input){
+    print("you entered \(number)")
+    userGivenNumber = number
+}else{
+    print("invalid number")
+}
+
+// / TODO: Default Value
+print("default value : \(userGivenNumber ?? 10)")
+
+if let number = userGivenNumber {
+    print("Number \(number)")
+}
+
+let finalNumber = userGivenNumber ?? 10
+// / TODO: If else condition
+if(finalNumber < 18){
+    print("Your are under 18")
+}else if(finalNumber > 18){
+    print("you are above 18")
+}else{
+    print("congrates ! you are 18")
+}
+
+// / TODO: String uppercase/lowercase
+
+var testString : String?
+testString = "aBcD"
+print((testString ?? "NULL VALUE").uppercased())
+print((testString ?? "NULL VALUE").lowercased())
+print(testString ?? "NULL VALUE")
