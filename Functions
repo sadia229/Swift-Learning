@@ -1,0 +1,30 @@
+/// TODO: Basic functions / return parameter / return default parameter
+
+func basicFunctions(name : String = "Test"){
+    print("Calling basic functions")
+    print("Optional parameter with default parameter :\(name)")
+}
+
+basicFunctions()
+basicFunctions(name:"Hmmm")
+
+/// TODO: arrow function
+
+func arrowFunction(a: Int) -> Int {
+    return a
+}
+
+
+let result = arrowFunction(a:300)
+print("Calling arrow function: \(result)")
+
+/// TODO: External & Internal Parameter Names
+
+func divide(_ a: Int, by b: Int)-> Int {
+    print(" Enter first number : \(a)")
+    print(" Enter second number : \(b)")
+    return a / b
+}
+
+let divideResult = divide(10, by: 2)
+print(divideResult)
